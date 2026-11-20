@@ -1,0 +1,8 @@
+[build]
+  base = "Progress_5"
+  # This Express backend has no static build; Netlify bundles its server separately.
+  command = "mkdir -p public"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "24"
